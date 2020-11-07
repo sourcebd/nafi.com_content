@@ -1,0 +1,457 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>NAFI.COM</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./Style.css" />
+  <link rel="stylesheet" href="./mobile-style.css"> 
+ 
+ <style id="clock-animate"></style>
+ 
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-book-reader fa-2x mx-3"></i>NAFI.COM
+       <img src="https://i.imgur.com/By9bbw2.png" style="width:120px;height:110px;" alt="iconape">
+       </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.aiub.edu/academics/courses-tuition-fees">COURSE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.aiub.edu/contact">CONTACT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="dropdown">
+                <a href="#" class="nav-link">PAGES</a>
+                <div class="dropdown-content">
+                  <a href="https://www.facebook.com/groups/aiubcoursesolution/">ACS</a>
+                  <a href="https://www.facebook.com/nafi.king16/">PERSONAL</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.aiub.edu/category/notices">NOTICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/NafiMahmudOfficialFanPage/">ABOUT OWNER</a>
+            </li>
+           
+           <li class="nav-item">
+              <div class="clock">
+      <div class="center-nut">
+</div>
+<div class="center-nut2">
+</div>
+<div class="indicator">
+        <div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+</div>
+<div class="sec-hand">
+</div>
+<div class="min-hand">
+</div>
+<div class="hr-hand">
+</div>
+</div>
+<script>
+(function() {
+  var time = new Date(), //we get this time from our pc time not from server
+  second = time.getSeconds() / 60 * 360,
+  minute = time.getMinutes() / 60 * 360 + time.getSeconds() / 60 *6,
+  hour = time.getHours() / 12 * 360 + time.getMinutes() /60 * 30,
+  animation = [
+    "@keyframes sec-hand{from{transform: rotate(" + second + "deg);}to{transform: rotate(" + (second  + 360) + "deg);}}",
+    "@keyframes min-hand{from{transform: rotate(" + minute + "deg);}to{transform: rotate(" + (minute + 360) + "deg);}}",
+    "@keyframes hr-hand{from{transform: rotate(" + hour + "deg);}to{transform: rotate(" + (hour + 360) + "deg);}}"
+  ].join("");
+  document.querySelector("#clock-animate").innerHTML = animation;
+})();
+
+//EXAMPLE TO GET EXACT TIME IN READABLE FORMATE
+// function abc(){
+//   var time = new Date;
+//   var hr = time.getHours();
+//   var min = time.getMinutes();
+//   var sec = time.getSeconds();
+//   alert(hr + "hr " + min + "min " + sec + "sec ");
+// }
+// abc();
+</script>
+            
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-7 col-sm-12  text-white">
+          <h6><span style="color:#B6FF00">A WEBSITE BY MAHMUD, NAFI (17-33793-1), GRADUATED FROM AMERCIAN INTERNATIONAL UNIVERSITY-BANGLADESH (AIUB)</span></h6>
+          <h1>A HELPING HAND FOR THE STUDENTS OF AIUB</h1>
+          <p><span style="color:#00E9FF">
+            THIS WEBSITE HAS BEEN CREATED FOR THOSE STUDENTS WHO ARE FRESHERS & FOR THOSE STUDENTS WHO CAN'T AFFORD TO MANAGE THEIR DAILY SCHEDULE, COURSES, NOTES, ASSIGNMENTS, NOTICES & REGISTRATION.
+            </span></p>
+          <a class="bbtn btn-light px-5 py-2 primary-btn" href="http://nafi.epizy.com/Account.php" role="button">SIGN UP NOW!</a> 
+        </div>
+       
+       <div class="col-md-5 col-sm-12  h-25">
+         
+         
+<video autoplay="" loop="" width="350" height="200" muted>
+     <source type="video/mp4" src="aiub.mp4">
+     </video>
+<style> 
+     body { text-align: center; } 
+</style>
+         
+         
+        </div>
+       
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-1">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="pray">
+              <img src="https://i.imgur.com/XmHAIoR.jpg"  style="width:150px;height:180px;" alt="Pray">
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="panel text-left">
+              <h1>Mr. Nafi Mahmud</h1>
+              <p class="pt-4">
+                BSc Hons. in CSE, Graduated from American International University-Bangladesh (AIUB)
+              </p>
+              <p>
+                He is a passionate professional Web Developer & Freelancer. He likes to play Battle Royal games in leisure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-2 container-fluid p-0">
+      <div class="cover">
+        <div class="overlay"></div>
+        <div class="content text-center">
+          <h1>Some Features That Made Us Unique</h1>
+          <p>
+           A Helping Hand for AIUBIANs!
+          </p>
+         </div>     
+         </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+          <div class="rect">
+            <h1>2345</h1>
+            <p>Happy Client</p>
+          </div>
+          <div class="rect">
+            <h1>6784</h1>
+            <p>Cups Coffee</p>
+          </div>
+          <div class="rect">
+            <h1>1056</h1>
+            <p>Tickets Submitted</p>
+          </div>
+          <div class="rect">
+            <h1>9152</h1>
+            <p>Total Projects</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="purchase text-center">
+        <div style="background-color:purple"><br>
+          <span style="color:white">
+        <h1>Choose Whatever You Want</h1>
+            </span>
+          <span style="color:#00E9FF">
+        <p>
+          Notes, Assignments, Course details regarding Registration will be continuously uploaded here below.
+        </p>
+          </span>
+        <div class="cards">
+          <div class="d-flex flex-row justify-content-center flex-wrap">
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">NOTES</h5>
+                </div>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in.
+                </p>
+                <div class="pricing">
+                  <h1>8000+</h1>
+                  <a href="http://nafi.epizy.com/LoginResult.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Grab Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">ASSIGNMENTS</h5>
+                </div>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in.
+                </p>
+                <div class="pricing">
+                  <h1>1200+</h1>
+                  <a href="http://nafi.epizy.com/LoginResult.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Grab Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">COURSE DETAILS</h5>
+                </div>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in.
+                </p>
+                <div class="pricing">
+                  <h1>500+</h1>
+                  <a href="http://nafi.epizy.com/LoginResult.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Grab Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="section-3 container-fluid p-0 text-center">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h1>Download Our App for all Platforms!</h1>
+          <p>
+           <span style="color:#00E9FF">
+            THIS WEBSITE HAS BEEN CREATED FOR THOSE STUDENTS WHO ARE FRESHERS & FOR THOSE STUDENTS WHO CAN'T AFFORD TO MANAGE THEIR DAILY SCHEDULE, COURSES, NOTES, ASSIGNMENTS, NOTICES & REGISTRATION.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="platform row">
+        <div class="col-md-6 col-sm-12 text-right">
+          <div class="desktop shadow-lg">
+            <div class="d-flex flex-row justify-content-center">
+              <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
+              <div class="text text-left">
+                <h3><a href="https://gofile.io/d/cW0bDj" style="color: green" class="pt-1 m-0" role="button">DESKTOP</a></h3>
+                <p class="p-0 m-0">Gofile</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 text-left">
+          <div class="desktop shadow-lg">
+            <div class="d-flex flex-row justify-content-center">
+              <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
+              <div class="text text-left">
+                <h3><a href="https://apkpure.com/u/6807460/post/9594672" style="color: green" class="pt-1 m-0" role="button">ON MOBILE</a><h3>
+                <p class="p-0 m-0">APKPure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="section-4">
+      <div style="background-color:#00A2FF">
+      <div class="container text-center">
+        <h1 class="text-dark">What our Readers Say about us</h1>
+        <p class="text-secondary">Very efficient, decent Website & helpful for the Students.</p>
+      </div>
+      <div class="team row ">
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+              <img src="https://i.imgur.com/XmHAIoR.jpg" style="width:180px;height:200px;" class="img-fluid rounded-circle" alt="Pray">
+                </div>
+                <div style="background-color:#FF9800">
+                <div class="card-body">
+                  <h3 class="card-title">Nafi Mahmud</h3>
+                  <p class="card-text">
+                    <span style="color:white">
+                          A passionate professional Web Developer & Freelancer. He likes to play Battle Royal games in leisure.
+                             </span>
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                  <p class="text-black-50">CEO at Google</p>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <div class="card mr-2 d-inline-block shadow">
+                      <div class="card-img-top">
+                        <img src="https://i.imgur.com/i8kX3bu.jpg" style="width:180px;height:200px;" class="img-fluid rounded-circle" alt="pray">
+                      </div>
+                      <div style="background-color:#FF9800">                                                                                                  
+                      <div class="card-body">
+                        <h3 class="card-title">Ahmed Zami</h3>
+                        <p class="card-text">
+                          <span style="color:white">
+                          A EEE Engineer. He likes to play Battle Royal games in leisure.
+                             </span>
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                        <p class="text-black-50">CEO at Google</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card  d-inline-block mr-2 shadow">
+                      <div class="card-img-top">
+                        <img src="https://i.imgur.com/fs0rUfO.jpg" style="width:180px;height:200px;" class="img-fluid rounded-circle" alt="pray">
+                      </div>
+                      <div style="background-color:#FF9800">
+                      <div class="card-body">
+                        <h3 class="card-title">Ahmed Iftekhar</h3>
+                        <p class="card-text">
+                          <span style="color:white">
+                          A Javascript Expert. He likes to play Battle Royal games in leisure.
+                             </span>
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                        <p class="text-black-50">CEO at Google</p>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+               </div>
+        </div>
+        </div>
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="https://i.imgur.com/Uxjmgjo.jpg" style="width:180px;height:200px;" class="img-fluid rounded-circle" alt="pray">
+                </div>
+                <div style="background-color:#FF9800">                                                                                       
+                <div class="card-body">
+                  <h3 class="card-title">Tirtho Barman</h3>
+                  <p class="card-text">
+                    <span style="color:white">
+                          A skillful Gamer. He likes to play Battle Royal games in leisure.
+                             </span>
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                  <p class="text-black-50">CEO at Google</p>
+                   </div>                         
+                </div>
+              </div>
+           </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+          <h4 class="text-light">About us</h4>
+          <p class="text-muted"><span style="color:#EFABFF">
+            THIS WEBSITE HAS BEEN CREATED FOR THOSE STUDENTS WHO ARE FRESHERS & FOR THOSE STUDENTS WHO CAN'T AFFORD TO MANAGE THEIR DAILY SCHEDULE, COURSES, NOTES, ASSIGNMENTS, NOTICES & REGISTRATION.
+            </span></p>
+          <p class="pt-4 text-muted">Copyright ©2020 All rights reserved | This Website is made by Nafi Mahmud.
+            <span> Daily Tuition</span>
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h4 class="text-light">Newsletter</h4>
+         <span style="color:#00E9FF"
+               <p>Stay Updated with</p></span>
+        <span style="color:#B6FF00"
+              <p>nativetube71@gmail.com</p></span>
+          <form class="form-inline">
+            <div class="col pl-0">
+              <div class="input-group pr-5">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                   <div style="color:#00FFA8">  
+                  <a class="bbtn btn-light px-5 py-2 primary-btn" href="http://www.123formbuilder.com/form-5684432/form" role="button">CONTACT NOW!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12"><br>
+          <h6 class="text-light">Follow Us</h6>
+          <p class="text-muted">Let us be social</p>
+          <div class="column text-light">
+            <a href="https://www.facebook.com/nafi.king16"><i class="fab fa-facebook"></i></a>
+           <a href="https://www.instagram.com/dauntless_nafi/?hl=en"><i class="fab fa-instagram"></i></a>
+           <a href="https://www.youtube.com/channel/UC7e9lXSVS_OQVGJ0hDdDtPQ"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+
+</body>
+</html>
