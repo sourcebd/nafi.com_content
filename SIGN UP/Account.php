@@ -28,7 +28,7 @@ body{background-image: url('G.jpg'); background-repeat:no-repeat; background-siz
 <br>
 <a href="http://nafi.epizy.com/Registration.php" style= "color:#00E9FF; font-family:calibri">Registration</a><br><br>
 <a href="http://nafi.epizy.com/Login.php" style= "color:#00E9FF; font-family:calibri">Login</a><br><br>
-<a href="http://sourcebd.github.io/nafi.com" style= "color:#00E9FF; font-family:calibri">Back</a>
+<a href="http://sourcebd.github.io/nafi.com_content" style= "color:#00E9FF; font-family:calibri">Back</a>
 </div>
 </b>
 

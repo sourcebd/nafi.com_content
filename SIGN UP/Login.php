@@ -75,7 +75,7 @@ h6{color:white}
 </form> 
 <br>
 <a href="Registration.php" style= "color:#00E9FF; font-family:calibri">Registration</a>
-<a href="http://sourcebd.github.io/nafi.com" style= "color:#00E9FF; font-family:calibri">Back</a>
+<a href="http://sourcebd.github.io/nafi.com_content" style= "color:#00E9FF; font-family:calibri">Back</a>
 </div>
 </b>
 
