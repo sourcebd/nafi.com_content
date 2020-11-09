@@ -6,21 +6,21 @@
 </head>
 <style>
 div#RegistrationBlock{width:270px;border:5px solid #ddd;padding:10px;margin:auto}
-body{background-image: url('G.jpg'); background-repeat:no-repeat; background-size:cover}
+body{background-image: url('../Images/G.jpg'); background-repeat:no-repeat; background-size:cover}
 </style>
 <body>
 
-<h6 style="font-size:10px; font-family: verdana; color: white"><?php include 'Header/header.php';?></h6>
+<h6 style="font-size:10px; font-family: verdana; color: white"><?php include '../Header/header.php';?></h6>
 
 <div id="RegistrationBlock">
 
-<div style="background-image: url('F2.jpg');color:black; padding:20px;">
+<div style="background-image: url('../Images/F2.jpg');color:black; padding:20px;">
 
 <div style="background-color: #0A0F48;color:#00E9FF; padding:0px;">
 
 <?php
 
-include('Registrationcheck.php');
+include('../Control/Registrationcheck.php');
 
 if(isset($_SESSION['fname'])){
 header("location: RegistrationResult.php");
@@ -32,22 +32,24 @@ header("location: RegistrationResult.php");
 <h1>Registration</h1>
 </div>
 <b>
-<div style="background-image: url('F1.jpg');color:#B6FF00;padding:1px;">
+<div style="background-image: url('../Images/F1.jpg');color:#B6FF00;padding:1px;">
 <h2><marquee direction=left>No Account? Create your Account now!</marquee></h2>
 </div>
-<div style="background-image: url('F1.jpg');color:#00FFA8;padding:20px;font-size:18px">
+<div style="background-image: url('../Images/F1.jpg');color:#00FFA8;padding:20px;font-size:18px">
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method='post'>
-  <Label>First Name:</label><br> <?php echo $fnameError;?>
+  <Label>First Name:</label><br> <?php echo $error;?>
   <input type="text" name="fname" ><br><br>
-  <Label>Last Name:</Label><br> <?php echo $lnameError;?>
+  <Label>Last Name:</Label><br> <?php echo $error;?>
   <input type="text" name="lname" ><br><br>
-  <Label>Password:</Label><br> <?php echo $passwordError;?>
+  <Label>Password:</Label><br> <?php echo $error;?>
   <input type="password" name="password" ><br><br>
-  <Label>Choose your Gender:</Label><br> <?php echo $genderError;?>
+  <Label>Email Id:</Label><br>
+  <input type="text" name="email" ><br><br>
+  <Label>Choose your Gender:</Label><br>
   <span style="color:#FF9800">
   <input type="radio" name="gender" value="Male" checked> Male
   <input type="radio" name="gender" value="Female"> Female</span><br><br>
-  <Label>What's your Profession?</Label><br> <?php echo $professionError;?>
+  <Label>What's your Profession?</Label><br>
   <span style="color:#FF9800">
   <input type="checkbox" name="profession" value="Doctor"> Doctor<br>
   <input type="checkbox" name="profession" value="Engineer" checked> Engineer
@@ -62,7 +64,10 @@ h4{color:red}
 h5{color:#00E9FF}
 h6{color:white}
 </style>
+
+
   <?php
+  /*
   if (!(empty($fname)||(!preg_match("/^[a-zA-Z-' ]*$/",$fname))))
   {
     echo "<h4 style='color:orange'>Your Input:</h4>";
@@ -85,16 +90,18 @@ h6{color:white}
     echo "<h4>Profession:</h4>";
     echo  "<h5>$printprofession</h5>";
   }
+  */
 ?>
+
 
 </form> 
 <br>
 <a href="Login.php" style= "color:#00E9FF; font-family:calibri">Login</a>
-<a href="http://sourcebd.github.io/nafi.com_content" style= "color:#00E9FF; font-family:calibri">Back</a>
+<a href="Account.php" style= "color:#00E9FF; font-family:calibri">Back</a><br><br>
 </div>
 </b>
 
-<h6 style="font-size:10px; font-family: verdana; text-align: center"><?php include 'Footer/footer.php';?></h6>
+<h6 style="font-size:10px; font-family: verdana; text-align: center"><?php include '../Footer/footer.php';?></h6>
 
 </div>
 </body>

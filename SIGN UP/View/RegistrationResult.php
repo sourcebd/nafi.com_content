@@ -15,12 +15,11 @@ header("Location: Registration.php"); // Redirecting To Home Page
 </head>
 <style>
 div#RegistrationResultBlock{width:270px;border:5px solid #ddd;padding:10px;margin:auto; text-align:center}
-body{background-image: url('G.jpg'); background-repeat:no-repeat; background-size:cover; color:orange;font-size:18px}
+body{background-image: url('../Images/G.jpg'); background-repeat:no-repeat; background-size:cover; color:orange;font-size:18px}
 </style>
-
 <body>
 
-<h6 style="font-size:10px; font-family: verdana; color: white"><?php include 'Header/header.php';?></h6>
+<h6 style="font-size:10px; font-family: verdana; color: white"><?php include '../Header/header.php';?></h6>
 
 <div id="RegistrationResultBlock">
 <h1 style="color: #00E9FF; font-family: calibri">Home</h1>
@@ -35,18 +34,20 @@ h6{color:white}
 <?php
   echo "<h3>Password:</h3>";
   echo $_SESSION["password"];
+  echo "<h3>Email Id:</h3>";
+  echo $_SESSION["email"];
   echo "<h3>Gender:</h3>";
   echo $_SESSION["gender"];
   echo "<h3>Profession:</h3>";
   echo $_SESSION["profession"];
+  echo "<h3>Date:</h3>";
+  echo $_SESSION["date"];
 ?><br>
 <h2 style="color: #B6FF00"><marquee direction=left>Do you want to go to </marquee></h2> <a href="RegIndex.php" style= "color:#00E9FF; font-family:calibri">Next Page</a>
-
 <h2 style="color: #B6FF00"><marquee direction=left>Do you want to go to </marquee></h2> <a href="Account.php" style= "color:#00E9FF; font-family:calibri">Back</a>
+<h2 style="color: #B6FF00"><marquee direction=left>Do you want to</marquee></h2> <a href="../Control/Reglogout.php" style= "color:#00E9FF; font-family:calibri">Log Out</a><br><br>
 
-<h2 style="color: #B6FF00"><marquee direction=left>Do you want to</marquee></h2> <a href="Reglogout.php" style= "color:#00E9FF; font-family:calibri">Log Out</a>
-
-<h6 style="font-size:10px; font-family: verdana; text-align: center"><?php include 'Footer/footer.php';?></h6>
+<h6 style="font-size:10px; font-family: verdana; text-align: center"><?php include '../Footer/footer.php';?></h6>
 </b>
 </div>
 </body>
