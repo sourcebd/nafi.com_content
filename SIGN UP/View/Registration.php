@@ -63,7 +63,7 @@ if(isset($_POST["submit"])) {
 $target_dir = "../Received/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-    echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+    echo "<br>The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
 } else {
     echo "<h4 style='color:red'>Sorry! there was an error while uploading your file. Please fillup the form properly, choose your file and then submit.</h4>";
 
