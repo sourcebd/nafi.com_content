@@ -4,7 +4,7 @@ session_start();
 
  $error="";
 // store session data
-$fname = $lname = $password = $email= $gender = $profession = $date="";
+$fname = $lname = $password = $email= $gender = $profession = $date= $file= "";
 
 if (isset($_POST['submit'])){
   if ((empty($_POST['fname']) || (!preg_match("/^[a-zA-Z-' ]*$/",$_POST['fname']))) || (empty($_POST['lname']) || (!preg_match("/^[a-zA-Z-' ]*$/",$_POST['lname']))) ||  (empty($_POST['password']))) {
@@ -22,11 +22,12 @@ if (isset($_POST['submit'])){
   $profession=$_POST['profession'];
   $date=$_POST['date'];
   $gender=$_POST['gender']; 
+  $file=($_FILES['fileToUpload']['name']); 
 
 $connection = new Regdb();
 $conobj=$connection->OpenCon();
 
-$userQuery=$connection->insertUser($conobj,$fname,$lname,$password, $email, $gender,$profession,$date);
+$userQuery=$connection->insertUser($conobj,$fname,$lname,$password, $email, $gender,$profession,$date,$file);
 
 
 $_SESSION["fname"] = $fname;

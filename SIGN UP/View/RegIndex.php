@@ -31,24 +31,7 @@ h6{color:white}
 
 <h2 style="color:white">Hi! </h2> <h2 style="color:red"><?php echo  $_SESSION["fname"] . " " . $_SESSION["lname"]; ?><br></h2>
 <b>
-<?php
-if(isset($_POST["submit"])) {
-$target_dir = "../Received/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-  if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-    echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-} else {
-    echo "Sorry, there was an error uploading your file.";
-
-}
-}
-?><br>
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method='post' enctype = "multipart/form-data">
-<h2 style="background-color: black;color:#00E9FF; border: 2px solid #ddd"><Label style="color:orange; font-family:calibri">Upload Your File</Label>
-     <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" name="submit" value="Upload">
-    </h2>
-    </form>
+<br>
 
 <h2 style="color: #B6FF00"><marquee direction=left>Do you want to go to </marquee></h2> <a href="Account.php" style= "color:#00E9FF; font-family:calibri">Back</a>    
 <h2 style="color: #B6FF00"><marquee direction=left>Do you want to</marquee></h2> <a href="../Control/Reglogout.php" style= "color:#00E9FF; font-family:calibri">Log Out</a><br><br>

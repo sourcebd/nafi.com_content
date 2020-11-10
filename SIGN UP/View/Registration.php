@@ -36,7 +36,7 @@ header("location: RegistrationResult.php");
 <h2><marquee direction=left>No Account? Create your Account now!</marquee></h2>
 </div>
 <div style="background-image: url('../Images/F1.jpg');color:#00FFA8;padding:20px;font-size:18px">
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method='post'>
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method='post' enctype = "multipart/form-data">
   <Label>First Name:</label><br> <?php echo $error;?>
   <input type="text" name="fname" ><br><br>
   <Label>Last Name:</Label><br> <?php echo $error;?>
@@ -56,8 +56,27 @@ header("location: RegistrationResult.php");
   </span><br><br>
   <label for="birthday">Birthday:</label>
   <input type="date" id="fname" name="date" >
-  <br><br>
+  <br>
+
+  <?php
+if(isset($_POST["submit"])) {
+$target_dir = "../Received/";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+  if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+    echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+} else {
+    echo "<h4 style='color:red'>Sorry! there was an error while uploading your file. Please fillup the form properly, choose your file and then submit.</h4>";
+
+}
+}
+?>
+
+<h2 style="background-color: black;color:#00E9FF; border: 2px solid #ddd"><Label style="color:orange; font-family:calibri">Upload Your File</Label>
+     <input type="file" name="fileToUpload" id="fileToUpload">
+    </h2>
+
   <input type="submit" name="submit" value="Submit">
+
 
   <style>
 h4{color:red}

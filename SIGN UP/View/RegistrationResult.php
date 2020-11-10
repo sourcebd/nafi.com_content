@@ -4,6 +4,7 @@ if(empty($_SESSION["fname"]))
 {
 header("Location: Registration.php"); // Redirecting To Home Page
 }
+error_reporting(0);
 ?>
 
 
