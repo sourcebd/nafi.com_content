@@ -18,7 +18,7 @@ div#LogIndexBlock{width:270px;border:5px solid #ddd;padding:10px;margin:auto;tex
 body{min-height: 100vh;
   background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://i.imgur.com/Kce5BG6.gif');
 	background-position: center;
-  background-repeat:no-repeat; background-size:cover}
+  background-repeat:no-repeat; background-size:cover; color:orange;font-size:18px}
 </style>
 <body>
 

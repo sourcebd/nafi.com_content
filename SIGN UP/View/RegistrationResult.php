@@ -15,7 +15,7 @@ error_reporting(0);
 <meta name="viewport", content="width=device-width, initial-scale=1">
 </head>
 <style>
-div#RegistrationResultBlock{width:270px;border:5px solid #ddd;padding:10px;margin:auto; text-align:center}
+div#RegistrationResultBlock{width:270px;border:5px solid #ddd;padding:10px;margin:auto; text-align:center; color:orange;font-size:18px}
 body{min-height: 100vh;
   background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://i.imgur.com/Kce5BG6.gif');
 	background-position: center;
