@@ -6,7 +6,10 @@
 </head>
 <style>
 div#AccountBlock{width:270px;border:5px solid #ddd;padding:10px;margin:auto; text-align:center}
-body{background-image: url('../Images/G.jpg'); background-repeat:no-repeat; background-size:cover}
+body{min-height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://i.imgur.com/Kce5BG6.gif');
+  background-position: center;
+  background-repeat:no-repeat; background-size:cover}
 </style>
 <body>
 
