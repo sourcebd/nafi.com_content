@@ -10,7 +10,7 @@
 
 body{
   min-height: 100vh;
-  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('header.gif');
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://i.imgur.com/Kce5BG6.gif');
   background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -52,7 +52,7 @@ body{
 }
 
 .main-nav li h1:hover{
-  background-image:url('header.gif');
+  background-image:url('https://i.imgur.com/Kce5BG6.gif');
   border-bottom: 3px solid #bf55ec;
   border-top: 3px solid yellow;
   border-right: 3px solid #00E9FF;
