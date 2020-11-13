@@ -14,7 +14,7 @@ section {
   --Patua: "Patua One", cursive;
   --Lobster: "lobster", cursive;
   --light-black: #2e2c2caf;
-  --bggradient: linear-gradient(90deg, rgba(255,0,86,1) 15%, rgba(115,10,201,1) 39%, rgba(0,14,255,1) 65%, rgba(156,224,14,1) 100%, rgba(18,18,18,1) 100%);
+  --bggradient: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('header.gif');
 }
 
 header a {
