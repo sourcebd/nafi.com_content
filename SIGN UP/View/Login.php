@@ -5,7 +5,7 @@
 <meta name="viewport", content="width=device-width, initial-scale=1">
 </head>
 <style>
-div#RegistrationBlock{width:270px;border:5px solid #ddd;padding:10px;margin:auto}
+div#LoginBlock{width:270px;border:5px solid #ddd;padding:10px;margin:auto}
 body{min-height: 100vh;
   background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://i.imgur.com/Kce5BG6.gif');
 	background-position: center;
@@ -15,7 +15,7 @@ body{min-height: 100vh;
 
 <h6 style="font-size:10px; font-family: verdana; color: white"><?php include '../Header/header.php';?></h6>
 
-<div id="RegistrationBlock">
+<div id="LoginBlock">
 
 <div style="background-image: url('../Images/F2.jpg');color:black; padding:20px;">
 
@@ -46,7 +46,7 @@ header("location: LoginResult.php");
   <input type="text" name="lname" ><br><br>
   <Label>Password:</Label><br> <?php echo $error;?>
   <input type="password" name="password" ><br><br>
-  <input type="submit" name="submit" value="Submit">
+  <input type="submit" name="submit" style="background-color:red; color:white; border:2px solid white; cursor:pointer" value="Submit">
 
   <style>
 h4{color:red}

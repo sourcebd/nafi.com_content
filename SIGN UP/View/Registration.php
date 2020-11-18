@@ -78,7 +78,7 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
      <input type="file" name="fileToUpload" id="fileToUpload">
     </h2>
 
-  <input type="submit" name="submit" value="Submit">
+  <input type="submit" name="submit" style="background-color:red; color:white; border:2px solid white; cursor:pointer" value="Submit">
 
 
   <style>

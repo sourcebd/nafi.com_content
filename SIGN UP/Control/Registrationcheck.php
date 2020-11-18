@@ -37,6 +37,7 @@ $_SESSION["email"] = $email;
 $_SESSION["gender"] = $gender;
 $_SESSION["profession"] = $profession;
 $_SESSION["date"] = $date;
+$_SESSION[["fileToUpload"]["name"]]=$file;
   
 $connection->CloseCon($conobj);
 
